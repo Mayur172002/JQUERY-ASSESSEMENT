@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="https://png.pngtree.com/png-vector/20191027/ourmid/pngtree-hand-icon-for-your-design-websites-and-projects-png-image_1881198.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registered Form</title>
+    <style>
+      input{
+        margin-left: 50px;
+        width: 304px;
+      }
+      #ten{
+        margin-left: 50px;
+        width: 312px;
+      }
+      #eleven{
+        width: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <form action="">
+        <tr>
+          <td>
+            <label for="">Frist Name :</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              required
+              id="one"
+              value=""
+              placeholder="Frist Name"
+          
+            />
+          </td>
+        </tr>
+    
+        <tr>
+          <td>
+            <label for="">Last Name :</label>
+          </td>
+          <td>
+            <input
+              type="text"
+              required
+              id="two"
+              value=""
+              placeholder="Last Name"
+            />
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <label for="">Email :</label>
+          </td>
+          <td>
+            <input
+              type="email"
+              required
+              id="three"
+              value=""
+              placeholder="it should contain @.."
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="">Mobile :</label>
+          </td>
+          <td>
+            <input
+              type="number"
+              required
+              id="threeone"
+              maxlength="10"
+              minlength="8"
+              value=""
+              placeholder="Mobile number"
+            />
+          </td>
+        </tr>
+        <tr>
+            <td>
+              <label for="">Gender :</label>
+            </td>
+            <td>
+              <input
+                type="radio"
+                required
+                id="maleRadio"
+                value="male"
+               name="gender"
+              style="width:20px;" />
+              <label for="maleRadio">Male</label>
+              <input
+              type="radio"
+              required
+              id="femaleRadio"
+              value="female"
+              style="width:20px;"
+               name="gender"
+            />
+            <label for="femaleRadio">Female</label>
+            </td>
+        
+          </tr>
+          <tr>
+            <td>
+              <label for="">Date Of Birth :</label>
+            </td>
+            <td>
+              <input
+                type="datetime-local"
+                required
+                id="five"
+                value=""
+            
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Address :</label>
+            </td>
+            <td>
+       
+         <input type="text" id="six" style="height: 110px;">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">City :</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                required
+                id="seven"
+                value=""
+            
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Area Pin :</label>
+            </td>
+            <td>
+              <input
+                type="number"
+                required
+                id="eight"
+                value=""
+              
+            
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">State :</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                required
+                id="nine"
+                value=""
+              
+            
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="ten">Qualification :</label>
+            </td>
+            <td>
+              <select name="qualification" id="ten">
+                <option value="">Select a qualification</option>
+                <option value="frontend">FRONTEND DEVELOPER</option>
+                <option value="backend">BACKEND DEVELOPER</option>
+                <option value="dataScience">DATA SCIENCE</option>
+                <option value="science">SCIENCE</option>
+                <option value="bca">BCA</option>
+                <option value="bba">BBA</option>
+                <option value="bcom">B.COM</option>
+            </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="eleven">Specialization :</label>
+            </td>
+            <td>
+              <input
+                type="checkbox"
+                required
+                id="eleven"
+                value="Computer science"
+              name="abc"
+              />Computer Science
+              <br>
+              <input
+              type="checkbox"
+              required
+              id="eleven"
+              value=" Information Technology"
+            name="abc"
+            />Information Technology
+            <br>
+            <input
+            type="checkbox"
+            required
+            id="eleven"
+            value=" Computer Architecture"
+          name="abc"
+          />Computer Architecture 
+          <br>
+          <input
+          type="checkbox"
+          required
+          id="eleven"
+          value=" Tele Communication"
+        name="abc"
+        />Tele Communication
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="">Password :</label>
+            </td>
+            <td>
+              <input
+                type="password"
+                required
+                id="twelve"
+                value=""
+                maxlength="6"
+                minlength="3"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="submit" onclick="formvalidation()" style="background-color: green;color: white;">Registered</button>  
+            </td>
+          </tr>
+          
+      </form>
+    </table>
+  </body>
+  <script src="script.js"></script> 
+</html>
